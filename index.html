@@ -47,13 +47,13 @@
     Noto Color Emoji;
     }
 
-    @font-face {
+    /* @font-face {
       font-family: "Pretendard-Regular";
       src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
         format("woff");
       font-weight: 400;
       font-style: normal;
-    }
+    } */
 
     * {
       /* font-family: Pretendard-Regular;
@@ -128,7 +128,6 @@
       display: flex;
       flex-direction: row-reverse;
       line-height: 2rem;
-
       
     }
 
@@ -176,7 +175,6 @@
       }
 
       .contents-body {
-      
         margin-top: 1rem;
         
       }
@@ -184,19 +182,20 @@
 
     .contents {
       display: flex;
-      /* justify-content: space-between; */
+      
     }
 
+   
     .contents-body{
-      display: flex;
-      flex-direction: column;
-      margin-left: 2rem;
+    
+      text-align: left;
     }
 
     .contents-title{
       display: flex;
       flex-direction: column;
       width: 20rem;
+      
       
     }
 
@@ -252,31 +251,34 @@
           >
         </div>
 
-        <div class="contents-body">
-          <h4 style="font-weight: 600">Description</h5>
-          <p>
-            1000만건의 상품데이터, 200만 유저데이터로<br />
-            대규모 트래픽 상황 속에서 견디는 서버를 구축하는 미니 프로젝트
-          </p>
-
-          <h4 style="font-weight: 600">what I did</h5>
-          <ul>
-            <li>데이터 정합성을 지키기 위한 <a href="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/3ef92a82c9c92f4e5b44d46b257ea6207165807e">Locking</a>적용</li>
-            <li>Indexing을 통한 <a href="https://kirinman.tistory.com/93">Like 검색 개선</a></li>
-            <li>Redis를 사용한 <a href ="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/d6f5c1db93613317d9207a1d66bdd310e45d9cfb">캐싱 전략 수립</a></li>
-            <li><a href="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/4490710c6a0cc0153d9fab1a92e0dd862389a144">logging 전략</a> 수립</li>
-            
-          </ul>
-
-          <h4 style="font-weight: 600;">Tech Stack</h4>
-          <ul>
-            <li>Spring Boot</li>
-            <li>Redis</li>
-            <li>MySQL</li>
-            <li>Amazone EC2</li>
-            <li>GitHub Action</li>
-          </ul>
-        </div>
+        
+          <div class="contents-body">
+            <h4 style="font-weight: 600">Description</h5>
+            <p>
+              1000만건의 상품데이터, 200만 유저데이터로<br />
+              대규모 트래픽 상황 속에서 견디는 서버를 구축하는 미니 프로젝트
+            </p>
+  
+            <h4 style="font-weight: 600">what I did</h5>
+            <ul>
+              <li>데이터 정합성을 지키기 위한 <a href="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/3ef92a82c9c92f4e5b44d46b257ea6207165807e">Locking</a>적용</li>
+              <li>Indexing을 통한 <a href="https://kirinman.tistory.com/93">Like 검색 개선</a></li>
+              <li>Redis를 사용한 <a href ="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/d6f5c1db93613317d9207a1d66bdd310e45d9cfb">캐싱 전략 수립</a></li>
+              <li><a href="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/4490710c6a0cc0153d9fab1a92e0dd862389a144">logging 전략</a> 수립</li>
+              
+            </ul>
+  
+            <h4 style="font-weight: 600;">Tech Stack</h4>
+            <ul>
+              <li>Spring Boot</li>
+              <li>Redis</li>
+              <li>MySQL</li>
+              <li>Amazone EC2</li>
+              <li>GitHub Action</li>
+            </ul>
+          </div>
+        
+        
       </div>
 
 
@@ -293,29 +295,33 @@
           >
         </div>
 
-        <div class="contents-body">
-          <h4 style="font-weight: 600">Description</h5>
-          <p>
-            데이팅 앱 tinder의 사용자 매칭, 사용자 추천 등의<br> 주요 기능을 구현하는 Api를 제작하는 프로젝트
-          </p>
-
-          <h4 style="font-weight: 600">what I did</h5>
-          <ul>
-            <li><a href="https://github.com/ourMiniProjects/tinder/commit/856917be590f28f5ee3cdc76e5535a542b35472e">GitHub Action</a>을 사용한 CI / CD 적용</li>
-            <li><a href="https://github.com/ourMiniProjects/tinder/commit/8316ffeb25cf8afea8de2591b0a4079c9f1ab56d">JWT와 Spring Security</a>를 사용한 인증 / 인가 적용</li>
-            <li>aws ec2(스테이징 / 개발 서버 미운영) / rds / s3를 활용하여 서버 환경 구축</li>
-          </ul>
-
-          <h4 style="font-weight: 600;">Tech Stack</h4>
-          <ul>
-            <li>Spring Boot</li>
-            <li>Amazone EC2</li>
-            <li>Amazone RDS</li>
-            <li>Amazone S3</li>
-            <li>GitHub Action</li>
-          </ul>
-        </div>
+        
+          <div class="contents-body">
+            <h4 style="font-weight: 600">Description</h5>
+            <p>
+              데이팅 앱 tinder의 사용자 매칭, 사용자 추천 등의<br> 주요 기능을 구현하는 Api를 제작하는 프로젝트
+            </p>
+  
+            <h4 style="font-weight: 600">what I did</h5>
+            <ul>
+              <li><a href="https://github.com/ourMiniProjects/tinder/commit/856917be590f28f5ee3cdc76e5535a542b35472e">GitHub Action</a>을 사용한 CI / CD 적용</li>
+              <li><a href="https://github.com/ourMiniProjects/tinder/commit/8316ffeb25cf8afea8de2591b0a4079c9f1ab56d">JWT와 Spring Security</a>를 사용한 인증 / 인가 적용</li>
+              <li>aws ec2(스테이징 / 개발 서버 미운영) / rds / s3를 활용하여<br> 서버 환경 구축</li>
+            </ul>
+  
+            <h4 style="font-weight: 600;">Tech Stack</h4>
+            <ul>
+              <li>Spring Boot</li>
+              <li>Amazone EC2</li>
+              <li>Amazone RDS</li>
+              <li>Amazone S3</li>
+              <li>GitHub Action</li>
+            </ul>
+          </div>
+        
+        
       </div>
+      
 
       <div class="divider"></div>
 
@@ -329,26 +335,29 @@
           >
         </div>
 
-        <div class="contents-body">
-          <h4 style="font-weight: 600">Description</h5>
-          <p>
-            음식 주문 키오스크 기능을 가진 웹 어플리케이션을 구현하는 <br>미니 프로젝트
-          </p>
-
-          <h4 style="font-weight: 600">what I did</h5>
-          <ul>
-            <li>제품의 주문, 마일리지 적립 등 서비스 관련 코드 작성 </li>
-            <li>토큰을 활용한 인증 / 인가 및 주문 시간 초과 로직 제작</li>
-          </ul>
-
-          <h4 style="font-weight: 600;">Tech Stack</h4>
-          <ul>
-            <li>Spring Boot</li>
-            <li>Amazone EC2</li>
-            <li>Amazone RDS</li>
-            <li>JWT</li>
-          </ul>
-        </div>
+        
+          <div class="contents-body">
+            <h4 style="font-weight: 600">Description</h5>
+            <p>
+              음식 주문 키오스크 기능을 가진 웹 어플리케이션을 구현하는 <br>미니 프로젝트
+            </p>
+  
+            <h4 style="font-weight: 600">what I did</h5>
+            <ul>
+              <li>제품의 주문, 마일리지 적립 등 서비스 관련 코드 작성 </li>
+              <li>토큰을 활용한 인증 / 인가 및 주문 시간 초과 로직 제작</li>
+            </ul>
+  
+            <h4 style="font-weight: 600;">Tech Stack</h4>
+            <ul>
+              <li>Spring Boot</li>
+              <li>Amazone EC2</li>
+              <li>Amazone RDS</li>
+              <li>JWT</li>
+            </ul>
+          </div>
+        
+        
       </div>
 
       <div class="divider-bold"></div>
