@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이력서 | 유현승</title>
+
+    <!-- #########Font######### -->
+    <link
+      ref="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+  </head>
+  <style>
+    /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+    html,
+    body {
+      font-size: 16px;
+      word-break: keep-all;
+      letter-spacing: -0.3px;
+      color: #222222;
+      padding-bottom: 2rem;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @font-face {
+      font-family: "Pretendard-Regular";
+      src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+        format("woff");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    * {
+      font-family: Pretendard-Regular;
+      font-weight: 400;
+      font-size: 16px;
+
+      box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 960px) {
+      html,
+      body {
+        font-size: 14px;
+      }
+    }
+
+    h1 {
+      font-size: 5rem;
+      line-height: 1.1;
+    }
+
+    @media screen and (max-width: 960px) {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin: 4rem 0 2rem 0;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin: 0 0 1rem 0;
+    }
+
+    h4 {
+      font-size: 2rem;
+      margin: 0 0 1rem 0;
+    }
+
+    @media screen and (max-width: 960px) {
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+
+    h5 {
+      font-size: 1.3rem;
+      margin: 0 0 0.5rem 0;
+      color: #333333;
+    }
+
+    body:before {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 10px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 50rem;
+      margin: auto;
+    }
+
+    .contact-wrap {
+      display: flex;
+      flex-direction: row-reverse;
+      line-height: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #3A7BD5;
+      transition: color 0.2s ease-in-out
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #041d60;
+      
+    }
+  
+    p {
+      margin: 0 0 1rem 0;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    .divider {
+      height: 1px;
+      background: #ddd;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .divider-bold {
+      height: 3px;
+      background: #ddd;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .name {
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 960px) {
+      .contents {
+        flex-direction: column;
+      }
+
+      .contents-body {
+      
+        margin-top: 1rem;
+        
+      }
+    }
+
+    .contents {
+      display: flex;
+      /* justify-content: space-between; */
+    }
+
+    .contents-body{
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+    }
+
+    .contents-title{
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    ul > li {
+      position: relative;
+      padding: 0.2rem 0 0.2rem 1rem;
+    }
+
+    ul > li:before {
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      content: "•";
+      color: grey;
+    }
+
+  
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="name">
+        <h2 style="line-height: 0%; font-weight: bold">
+          유현승
+          <h3 style="margin-left: 0.1rem;">Backend Developer</h3>
+        </h2>
+      </div>
+
+      <p>
+        경험과 학습을 통해 끊임없이 발전하며 성장하는 개발자입니다. <br />
+        성숙한 태도와 적극적인 자세로 문제를 해결하고,<br />
+        유연한 사고력을 바탕으로 새로운 기술을 습득하는 것을 선호합니다.
+      </p>
+
+      <div class="divider-bold"></div>
+
+      <h3 style="font-weight: bold;">Projects</h3>
+
+      <div class="contents">
+        <div class="contents-title">
+          <h4 style="font-weight: 600;">대규모 트래픽 연구소</h5>
+          <a
+            href="https://github.com/Traffic-Reasearch-Institute"
+            style="font-style: italic"
+            >https://github.com/<br />Traffic-Reasearch-Institute</a
+          >
+        </div>
+
+        <div class="contents-body">
+          <h4 style="font-weight: 600">Description</h5>
+          <p>
+            1000만건의 상품데이터, 200만 유저데이터로<br />
+            대규모 트래픽 상황 속에서 견디는 서버를 구축하는 미니 프로젝트
+          </p>
+
+          <h4 style="font-weight: 600">what I did</h5>
+          <ul>
+            <li>데이터 정합성을 지키기 위한 <a href="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/3ef92a82c9c92f4e5b44d46b257ea6207165807e">Locking</a>적용</li>
+            <li>Indexing을 통한 <a href="https://kirinman.tistory.com/93">Like 검색 개선</a></li>
+            <li>Redis를 사용한 <a href ="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/d6f5c1db93613317d9207a1d66bdd310e45d9cfb">캐싱 전략 수립</a></li>
+            <li><a href="https://github.com/Traffic-Reasearch-Institute/stress-traffic-system/commit/4490710c6a0cc0153d9fab1a92e0dd862389a144">logging 전략</a> 수립</li>
+            
+          </ul>
+
+          <h4 style="font-weight: 600;">Tech Stack</h4>
+          <ul>
+            <li>Spring Boot</li>
+            <li>Redis</li>
+            <li>MySQL</li>
+            <li>Amazone EC2</li>
+            <li>GitHub Action</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="divider"></div>
+
+
+      <div class="contents">
+        <div class="contents-title">
+          <h4 style="font-weight: 600;">CloneCoding  <br> - tinder</h5>
+          <a
+            href="https://github.com/ourMiniProjects/tinder"
+            style="font-style: italic"
+            >https://github.com/<br />Traffic-Reasearch-Institute</a
+          >
+        </div>
+
+        <div class="contents-body">
+          <h4 style="font-weight: 600">Description</h5>
+          <p>
+            데이팅 앱 tinder의 사용자 매칭, 사용자 추천 등의<br> 주요 기능을 구현하는 Api를 제작하는 프로젝트
+          </p>
+
+          <h4 style="font-weight: 600">what I did</h5>
+          <ul>
+            <li><a href="https://github.com/ourMiniProjects/tinder/commit/856917be590f28f5ee3cdc76e5535a542b35472e">GitHub Action</a>을 사용한 CI / CD 적용</li>
+            <li><a href="https://github.com/ourMiniProjects/tinder/commit/8316ffeb25cf8afea8de2591b0a4079c9f1ab56d">JWT와 Spring Security</a>를 사용한 인증 / 인가 적용</li>
+            <li>aws ec2(스테이징 / 개발 서버 미운영) / rds / s3를 활용하여 서버 환경 구축</li>
+          </ul>
+
+          <h4 style="font-weight: 600;">Tech Stack</h4>
+          <ul>
+            <li>Spring Boot</li>
+            <li>Amazone EC2</li>
+            <li>Amazone RDS</li>
+            <li>Amazone S3</li>
+            <li>GitHub Action</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="contents">
+        <div class="contents-title">
+          <h4 style="font-weight: 600;">MyKiosk</h5>
+          <a
+            href="https://github.com/miniProjectTeam5/project_Team5"
+            style="font-style: italic"
+            >https://github.com/<br />Traffic-Reasearch-Institute</a
+          >
+        </div>
+
+        <div class="contents-body">
+          <h4 style="font-weight: 600">Description</h5>
+          <p>
+            음식 주문 키오스크 기능을 가진 웹 어플리케이션을 구현하는 <br>미니 프로젝트
+          </p>
+
+          <h4 style="font-weight: 600">what I did</h5>
+          <ul>
+            <li>제품의 주문, 마일리지 적립 등 서비스 관련 코드 작성 </li>
+            <li>토큰을 활용한 인증 / 인가 및 주문 시간 초과 로직 제작</li>
+          </ul>
+
+          <h4 style="font-weight: 600;">Tech Stack</h4>
+          <ul>
+            <li>Spring Boot</li>
+            <li>Amazone EC2</li>
+            <li>Amazone RDS</li>
+            <li>JWT</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider-bold"></div>
+
+      <h3 style="font-weight: bold;">Contacts</h3>
+
+      <div class="contact-wrap">
+        <div class="contact">
+          gitHub:
+          <a href="https://kirinman.tistory.com/" style="font-weight: bold"
+            >https://github.com/hyeunseungYu</a
+          >
+          <br />
+          web:
+          <a href="https://kirinman.tistory.com/" style="font-weight: bold"
+            >https://kirinman.tistory.com</a
+          >
+          <br />
+          Email:
+          <a href="mailto:hyeunseung03@gmail.com" style="font-weight: bold"
+            >hyeunseung03@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
