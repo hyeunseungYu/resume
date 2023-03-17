@@ -130,7 +130,9 @@
       display: flex;
       flex-direction: row-reverse;
       line-height: 2rem;
-      
+      height: 2rem;
+      margin-right: 2rem;
+          
     }
 
     
@@ -190,6 +192,7 @@
    
     .contents-body{
     
+    margin-left: 2rem;
       text-align: left;
     }
 
@@ -221,17 +224,46 @@
       color: grey;
     }
 
+    
+
   
   </style>
 
   <body>
-    <div class="container">
-      <div class="name">
-        <h2 style="line-height: 0%; font-weight: bold">
-          유현승
-          <h3 style="margin-left: 0.1rem;">Backend Developer</h3>
-        </h2>
+
+    <div class="contact-wrap">
+      <div class="contact">
+        gitHub:
+        <a href="https://github.com/hyeunseungYu" style="font-weight: bold"
+          >https://github.com/hyeunseungYu</a
+        >
+        <br />
+        web:
+        <a href="https://kirinman.tistory.com/" style="font-weight: bold"
+          >https://kirinman.tistory.com</a
+        >
+        <br />
+        Email:
+        <a href="mailto:hyeunseung03@gmail.com" style="font-weight: bold"
+          >hyeunseung03@gmail.com
+        </a>
       </div>
+    </div>
+
+    <div class="container">
+
+      
+
+        <div class="name">
+          <h2 style="line-height: 0%; font-weight: bold">
+            유현승
+            <h3 style="margin-left: 0.1rem;">Backend Developer</h3>
+          </h2>
+        </div>
+
+      
+      
+
 
       <p>
         경험과 학습을 통해 끊임없이 발전하며 성장하는 개발자입니다. <br />
@@ -364,27 +396,109 @@
 
       <div class="divider-bold"></div>
 
-      <h3 style="font-weight: bold;">Contacts</h3>
+      <h3 style="font-weight: bold;">Experience</h3>
 
-      <div class="contact-wrap">
-        <div class="contact">
-          gitHub:
-          <a href="https://github.com/hyeunseungYu" style="font-weight: bold"
-            >https://github.com/hyeunseungYu</a
+      <div class="contents">
+        <div class="contents-title">
+          <h5 style="font-weight: 600;">OpenAI의 chatGPT Api 활용</h5>
+          <a
+            href="https://kirinman.tistory.com/105"
+            style="font-style: italic"
+            >https://kirinman.tistory.com/105</a
           >
-          <br />
-          web:
-          <a href="https://kirinman.tistory.com/" style="font-weight: bold"
-            >https://kirinman.tistory.com</a
-          >
-          <br />
-          Email:
-          <a href="mailto:hyeunseung03@gmail.com" style="font-weight: bold"
-            >hyeunseung03@gmail.com
-          </a>
         </div>
+
+        
+          <div class="contents-body">
+  
+  
+            <ul>
+              <li>매번 chatGPT를 사용하기 위해 브라우저로 이동하는 게 귀찮아서 chatGPT api를 끌어와 인텔리제이에서 실행시킬 수 있도록 함</li>
+              <li>openAI에서 Java를 이용한 공식 매뉴얼이 없어, 우선 오픈 라이브러리를 활용하여 사용</li>
+              <li>openAI의 chatGPT 모델이 수시로 변경되는 상황이라 라이브러리 오류가 나는 경우가 있었고, 라이브러리 내부 구조를 확인한 뒤 커스텀하여 사용함</li>
+              <li>다만 비용 지출, 성능에서 브라우저보다 뒤떨어지는 문제가 있기에 현재 계속 develop 진행 중</li>
+            </ul>
+  
+            
+          </div>
+        
+        
       </div>
-    </div>
+
+      <div class="divider"></div>
+
+      <div class="contents">
+        <div class="contents-title">
+          <h5 style="font-weight: 600;">에러 원인을 빠르게 찾을 수 있도록 Logging 커스텀</h5>
+          <a
+            href="https://marmalade-hexagon-ee1.notion.site/Logging-fe09db63defc41968cf868d58f021b9a"
+            style="font-style: italic"
+            >Team notion</a
+          >
+        </div>
+
+        
+          <div class="contents-body">
+  
+  
+            <ul>
+              <li>대규모 트래픽과 관련된 토이 프로젝트 진행 중 예외가 터졌을 때, 에러를 스크롤하며 확인하는 것에 답답함을 느낌</li>
+              <li>위와 같은 상황에서 우리가 직접적으로 컨트롤 하고 체크가 가능한 부분만 나왔으면 좋겠다고 판단함</li>
+              <li>log 커스텀을 통해 기존에 예외가 터지면 약 20줄 이상의 로그가 나오던 것을 5줄 이내로 줄일 수 있었음</li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="contents">
+        <div class="contents-title">
+          <h5 style="font-weight: 600;">실제 사용자들이 이용하는 것과 같게 테스트 시나리오 작성</h5>
+          <a
+            href="https://kirinman.tistory.com/104"
+            style="font-style: italic"
+            >https://kirinman.tistory.com/104</a
+          >
+        </div>
+
+        
+          <div class="contents-body">
+  
+            <ul>
+              <li>부하 테스트 진행 시, 보다 정확한 테스트를 위해 실제 사용자들이 이용하는 것과 같은 테스트 시나리오를 제작할 필요가 있었음</li>
+              <li>여러 사용자들이 로그인하는 상황을 위해 더미데이터 csv를 제작하였음</li>
+              <li>테스트 시나리오는 로그인 이후, 선착순으로 쿠폰을 발급받는 것이었기에 테스트에서도 로그인을 계속 물고 있어야 했음</li>
+              <li>해당 조건을 위해 response의 토큰을 정규식으로 추출해내고 sampler를 통해 그 값을 변수로 활용할 수 있도록 해, 시나리오를 완성시켰음</li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="divider"></div>
+
+      
+      <div class="contents">
+        <div class="contents-title">
+          <h5 style="font-weight: 600;">Redis cache 사용시, cache stamped 문제 해결</h5>
+          <a
+            href="https://kirinman.tistory.com/104"
+            style="font-style: italic"
+            >https://kirinman.tistory.com/104</a
+          >
+        </div>
+
+        
+          <div class="contents-body">
+  
+            <ul>
+              <li>Redis로 캐싱를 적용하던 중, 아래와 같은 문제가 발생하였음</li>
+              <li>1.redis의 키가 만료됨 -> 2.많은 서버에서 하필 이 키를 바라보고 있었음 -> 3.모든 서버들이 DB에 접근해서 같은 데이터를 찾음 -> 4.읽어온 값을 각각 Write를 실행함</li>
+              <li>이는 굉장히 비효율적이었고, 불필요한 작업량이 늘어나 우리 서비스의 장애로 이어질 수 있었음</li>
+              <li>이러한 문제 해결을 위해 먼저 팀원들에게 상황을 알리고, 회의를 통해 현재 TTL보다 더 넉넉하게 시간을 늘리는 방안을 채택하였음</li>
+            </ul>
+          </div>
+      </div>
+
+      
 
     <!-- <div class="divider"></div>
     <br>
