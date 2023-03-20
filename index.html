@@ -126,6 +126,23 @@
           
     }
 
+    @media screen and (max-width: 960px) {
+      .contact > a > img{
+        display: none;
+      }
+
+      .contact-mobile{
+        display: block !important;
+      }
+    }
+
+
+    .contact > a > img{
+        width: 3rem;
+        height: 3rem; 
+    }
+
+  
     .contact > a{
       transition: all 0.2s ease-in-out
     }
@@ -133,6 +150,11 @@
     .contact > a:hover{
       opacity: 0.5;
     }
+
+    .contact-mobile{
+      display: none; 
+    }
+
 
     
     a {
@@ -234,20 +256,20 @@
       <div class="contact">
 
         <a href="https://github.com/hyeunseungYu" style="text-decoration: none; margin-right: 0.5rem;" >
-          <img src="./static/github.png" alt="github" width="50rem" height="50rem">
+          <img src="./static/github.png" alt="github">
         </a>
         
         <a href="https://www.linkedin.com/in/kirinmanHyeunseung/" style="text-decoration: none; margin-right: 0.5rem;">
-          <img src="./static/linkedIn.png" alt="linkedIn" width="50rem" height="50rem">
+          <img src="./static/linkedIn.png" alt="linkedIn">
         </a>
         
         
         <a href="https://kirinman.tistory.com/" style="text-decoration: none; margin-right: 0.5rem;">
-          <img src="./static/web.png" alt="web" width="50rem" height="50rem">
+          <img src="./static/web.png" alt="web">
         </a>
         
         <a href="mailto:hyeunseung03@gmail.com" style="text-decoration: none; margin-right: 0.5rem;">
-          <img src="./static/mail.png" alt="mailto" width="50rem" height="50rem">
+          <img src="./static/mail.png" alt="mailto">
         </a>
       </div>
     </div>
@@ -498,6 +520,37 @@
           </div>
       </div>
 
+<div class="contact-mobile">
+  <div class="divider-bold"></div>
+
+  <h3 style="font-weight: bold;">Contacts</h3>
+
+    <div class="contact-wrap">
+          <div class="contact">
+            gitHub:
+            <a href="https://kirinman.tistory.com/" style="font-weight: bold"
+              >https://github.com/hyeunseungYu</a
+            >
+            <br />
+            web:
+            <a href="https://kirinman.tistory.com/" style="font-weight: bold"
+              >https://kirinman.tistory.com</a
+            >
+            <br />
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/kirinmanHyeunseung/" style="font-weight: bold"
+              >https://www.linkedin.com/in/kirinmanHyeunseung/
+            </a>
+            <br />
+            Email:
+            <a href="mailto:hyeunseung03@gmail.com" style="font-weight: bold"
+              >hyeunseung03@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+</div>
+      
       
 
     <!-- <div class="divider"></div>
